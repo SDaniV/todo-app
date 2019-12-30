@@ -1,9 +1,17 @@
 <html>
   <head></head>
   <body>
-    <p>
-      Your task is <%= task %>
-    </p>
+<!--    <p>-->
+<!--      Your task is <%#= task %>-->
+<!--    </p>-->
+    <table class="table table-striped">
+      <% @tasks.each_with_index do |task, index| %>
+        <tr>
+          <td><%= index + 1 %></td>
+          <td><a href="/<%= task.name %>"><%= task.name %></a></td>
+        </tr>
+      <% end %>
+    </table>
     <form>
       <input type='text' name='task' />
       <input type='submit' value='Save' />

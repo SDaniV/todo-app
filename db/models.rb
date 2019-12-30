@@ -1,5 +1,5 @@
 require_relative 'connection'
 
-class Task < ActiveRecord::Base
+class Tasks < ActiveRecord::Base
 
 end

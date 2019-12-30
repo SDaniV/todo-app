@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Finatra</title>
-<!--    <link rel="stylesheet" href="styles.css" />-->
+    <title>Tasks</title>
+  <!--  <link rel="stylesheet" href='styles.css' />-->
   </head>
-  <body>
-    <h1><a href="/">TODO</a></h1>
+  <body class="container">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/">Tasks</a>
+        </div>
+      </div>
+    </nav>
     <%= yield %>
   </body>
 </html>

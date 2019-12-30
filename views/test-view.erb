@@ -1,0 +1,10 @@
+<h1>All the tasks!</h1>
+
+<table class="table table-striped">
+  <% @tasks.each_with_index do |task, index| %>
+    <tr>
+      <td><%= index + 1 %></td>
+      <td><a href="/<%= task.name %>"><%= task.name.capitalize %></a></td>
+    </tr>
+  <% end %>
+</table>
